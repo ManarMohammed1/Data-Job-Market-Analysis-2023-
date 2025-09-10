@@ -26,7 +26,14 @@ The initial dataset was loaded into a pandas DataFrame and inspected for missing
   ```
 
 - String-to-List/Dict Conversion: The job_skills and job_type_skills columns, which were stored as strings, were converted into actual lists and dictionaries using the ast.literal_eval function. This was a critical step for being able to "explode" the data and count individual skills later in the analysis.
+  ```python
+  df['job_skills'] = df['job_skills'].apply(lambda x: ast.literal_eval(x) if pd.notna(x) else x)
+  df['job_type_skills'] = df['job_type_skills'].apply(lambda x: ast.literal_eval(x) if pd.notna(x) else x)
+```
 
 - Filtering for US Data: The analysis was focused on the job market in the United States, so the DataFrame was filtered to include only job postings where the job_country was 'United States'.
+```python
+df_US = df[df['job_country'] == 'United States'].copy()
+```
 
 These steps were essential to ensure the data was in a usable format for the exploratory data analysis and to get accurate insights into the US data job market.
