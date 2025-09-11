@@ -7,13 +7,10 @@ The data sourced from [Luke Barousse's Python Course](https://lukebarousse.com/p
 
 # The Questions
 
-1. What are the most popular job roles and which countries have the most job postings?
-
-2. How are job postings for top roles trending over the year?
-
-3. What are the most in-demand skills for each of these roles?
-
-4. How do skills correlate with salary, and what are the most optimal skills for a Data Scientist to have?
+1. How are job postings for the top three data roles trending over time?
+2. What are the skills most in demand for the top 3 most popular data roles?
+3. How well do jobs pay for top three Data roles?
+4. What are the optimal skills for data scientist to learn? (High Demand AND High Paying)
 
 # Data Cleaning & Preprocessing
 
@@ -29,11 +26,31 @@ The initial dataset was loaded into a pandas DataFrame and inspected for missing
   ```python
   df['job_skills'] = df['job_skills'].apply(lambda x: ast.literal_eval(x) if pd.notna(x) else x)
   df['job_type_skills'] = df['job_type_skills'].apply(lambda x: ast.literal_eval(x) if pd.notna(x) else x)
-```
+
 
 - Filtering for US Data: The analysis was focused on the job market in the United States, so the DataFrame was filtered to include only job postings where the job_country was 'United States'.
+  ```python
+  df_US = df[df['job_country'] == 'United States'].copy()
+  ```
+These steps were essential to ensure the data was in a usable format for the exploratory data analysis and to get accurate insights into the US data job market.
+
+# Analysis
+
+This section dives into the core of the project, exploring the key questions that define the current landscape of the US data job market in 2023.
+
+## 1. Trending Job Posting in the US
+
+This analysis examines the monthly volume of job postings for the top three data roles: Data Analyst, Data Engineer, and Data Scientist. The goal is to identify trends and patterns in demand for each role over the course of the year.
+
+### Visualize Data
 ```python
-df_US = df[df['job_country'] == 'United States'].copy()
+sns.lineplot(data=posting_job_month_pivot,dashes=False, palette='tab10')
+plt.show()
 ```
 
-These steps were essential to ensure the data was in a usable format for the exploratory data analysis and to get accurate insights into the US data job market.
+### Results
+
+
+
+
+
