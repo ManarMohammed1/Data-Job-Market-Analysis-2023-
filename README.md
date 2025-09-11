@@ -1,9 +1,20 @@
 # Overview
-Welcome to my analysis of the data job market, with a focus on trends and skills. This project, which was created to better understand the current landscape of the data industry, delves into the top job roles, geographical demand, and the most sought-after skills and their corresponding salaries.
 
-The analysis is based on a dataset of job postings in 2023.
+Welcome to my analysis of the data job market. This project explores the 2023 data job market to uncover key trends in roles, skills, and salaries. Using a dataset of job postings sourced from [Luke Barousse's Python Course](https://lukebarousse.com/python), the analysis highlights the most in-demand positions, regional demand variations, and essential skills driving the industry.
+By applying Python-based analysis, I address questions such as which skills are most sought after, how job demand is distributed geographically, and which skills combine both high demand and competitive salaries — offering insights for aspiring and current data professionals.
 
-The data sourced from [Luke Barousse's Python Course](https://lukebarousse.com/python) which provides a foundation for my analysis, containing detailed information on job titles, salaries, locations, and essential skills. Through a series of Python scripts, I explore key questions such as the most demanded skills, job posting trends, and the intersection of demand and salary to identify optimal skills for data scientists.
+# Dataset
+- **Source:** The dataset comes from [Luke Barousse's Python Course](https://lukebarousse.com/python).
+- **Year:** 2023.
+- **Size:** 785741 Row with 17 Columns.
+- **Main Columns in my analysis:**
+  - `job_title_short`.
+  - `job_posted_date`.
+  - `job_country`.
+  - `salary_year_avg`.
+  - `company_name`.
+  - `job_skills`.
+  - `job_type_skills`.
 
 # The Questions
 
