@@ -29,8 +29,8 @@ Aspiring data professionals are told to "learn Python" or "learn SQL," but rarel
 ## Project Structure
 
 ```
+├── Images/              # Charts referenced below
 ├── data_jobs.ipynb      # Full analysis notebook
-├── images/              # Charts referenced below
 └── README.md
 ```
 
@@ -38,14 +38,14 @@ Aspiring data professionals are told to "learn Python" or "learn SQL," but rarel
 
 ### 1. Job Posting Trends
 
-![Trending job postings for Data Analyst, Data Engineer, and Data Scientist roles across 2023](images/01_trending_job_postings.png)
+![Trending job postings for Data Analyst, Data Engineer, and Data Scientist roles across 2023](Images/01_trending_job_postings.png)
 *Monthly posting counts for the three roles throughout 2023.*
 
 Data Analyst is consistently the highest-volume role all year. Data Analyst and Data Scientist demand move together, both peaking in January and August, while Data Engineer postings peak slightly later, in March and August.
 
 ### 2. Skills in Demand
 
-![Top 5 requested skills for Data Analyst, Data Engineer, and Data Scientist roles](images/02_skills_demand.png)
+![Top 5 requested skills for Data Analyst, Data Engineer, and Data Scientist roles](Images/02_skills_demand.png)
 *Top 5 skills by posting count for each role.*
 
 Python and SQL show up everywhere, but each role has its own specialty on top of that:
@@ -58,14 +58,14 @@ Python and SQL show up everywhere, but each role has its own specialty on top of
 
 ### 3. Salary Comparison
 
-![Salary distributions for the three roles](images/03_salary_distribution.png)
+![Salary distributions for the three roles](Images/03_salary_distribution.png)
 *Yearly salary distribution by role.*
 
 Data Scientist has the highest median salary and the widest range, including the top outliers. Data Engineer edges out Data Analyst on median pay, though the two roles have a similar typical salary range.
 
 ### 4. Optimal Skills to Learn
 
-![Scatter plot of skill demand percentage vs median salary for Data Scientist roles](images/04_optimal_skills.png)
+![Scatter plot of skill demand percentage vs median salary for Data Scientist roles](Images/04_optimal_skills.png)
 *Skill demand (% of postings) vs. median salary, Data Scientist role.*
 
 PyTorch and TensorFlow pay the most but appear in a smaller share of postings — specialist skills worth learning once the fundamentals are solid. Python and SQL sit at the sweet spot: extremely high demand *and* strong pay, making them the clear starting point for anyone breaking into data science.
